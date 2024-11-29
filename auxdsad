@@ -1,0 +1,13 @@
+new_phone = "03413623869"
+if(new_phone.startswith("54")):
+    #Si tiene 15
+    if new_phone[2:4] == "15":
+        new_phone = new_phone[:2] + new_phone[4:]
+    print("+" + new_phone)
+
+elif(new_phone.startswith("15")):
+    print("+54" + "341" + new_phone[2:])
+
+elif(new_phone.startswith("0")):
+    print ("+54" + new_phone[1:])
+    
