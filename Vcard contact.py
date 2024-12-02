@@ -58,6 +58,9 @@ def cleared_phone(phone):
     new_phone = phone.replace(" ", "")
     guiones = [pos for pos, char in enumerate(new_phone) if char == '-']
 
+    if len(guiones) < 3:
+        raise ValueError("El número de guiones es insuficiente para procesar el teléfono: {}".format(phone))
+
     sector1 = new_phone[guiones[0] + 1:guiones[1]]
     sector2 = new_phone[guiones[1] + 1:guiones[2]]
     sector3 = new_phone[guiones[2] + 1:]
@@ -105,8 +108,8 @@ with open(r'Archivos_necesarios\contactos.vcf', "w") as vcf_file:
             contact_name = row['Canal'] + "-" + row['Categoria'] + "-" + row['Codigo']
             contact_phone = row['Telefono']
 
-            canal = row['Canal'] + "-"
-            category = row['Categoria'] + "-"
+            canal = row['Canal']
+            category = row['Categoria']
             code = row["Codigo"]
             
             contact_N = f"{code};{canal};{category};"
