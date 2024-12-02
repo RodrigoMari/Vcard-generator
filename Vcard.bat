@@ -12,7 +12,7 @@ if %errorlevel% neq 0 (
     REM Verificar si el archivo se descargó correctamente
     if exist python_installer.exe (
         REM Ejecutar el instalador de Python
-        start /wait python_installer.exe /quiet InstallAllUsers=1 PrependPath=1
+        start /wait python_installer.exe /quiet InstallAllUsers=0 PrependPath=1
 
         REM Eliminar el instalador descargado
         del python_installer.exe
