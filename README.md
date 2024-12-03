@@ -42,7 +42,7 @@ No se incluyó en el archivo ejecutable debido a que requiere permisos de admini
 
 4. **Ejecutar archivo final**
    
-   Dentro del directorio principal encontrará el archivo ejecutable llamado "Vcard.bat" al que deberá darle doble click. Este archivo reproduce varios pasos en consola, entre ellos descargar python, pip y las dependencias necesarias, por lo que deberá ser paciente. No debe temer de dichas descargas ya que se ejecutan en un entorno virtual ajeno a su computadora (cuando termine sera borrado todo lo instalado)
+   Dentro del directorio principal encontrará el archivo ejecutable llamado "Vcard.bat" al que deberá darle doble click. Este archivo reproduce varios pasos en consola, entre ellos descargar python, pip y las dependencias necesarias, por lo que deberá ser paciente. No debe temer de dichas descargas ya que, ademas de ser aplicaciones de Microsoft, se ejecutan en un entorno virtual ajeno a su computadora (cuando termine sera borrado todo lo instalado)
 
    [URGENTE] **Hay un error de descarga con python en el que luego de su descarga se cierra la consola, simplemente debe darle nuevamente doble click al ejecutable**
 
