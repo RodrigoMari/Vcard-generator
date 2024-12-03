@@ -37,7 +37,18 @@ No se incluyó en el archivo ejecutable debido a que requiere permisos de admini
          - **Canal**: opciones disponibles["ALMACENES", "AUTOSERVICIOS", "CORPORATIVOS", "DIETETICAS", "ESTABL. EDUCATIVOS", "ESTACIONES DE SERVIC", "KIOSCOS", "NO TRADICIONALES"]
          - **Categoria**: opciones disponibles["CLIENTE A", "CLIENTE B1", "CLIENTE B2", "CLIENTE C", "CLIENTE D"]
          - **Codigo**: cantidad aleatoria de 0's y el codigo del cliente
-         - **Telefono**: 3 guiones medios separados por un espacio en el que **despues de cada guion** se va encontrar el codigo de pais, el codigo de area y el teléfono respectivamente. Para que sea un teléfono válido alcanza con tener al menos ingresado el teléfono
+         - **Telefono**: 3 guiones medios separados por un espacio en el que **despues de cada guion** se va a encontrar el codigo de pais, el codigo de area y el teléfono respectivamente. Para que sea un teléfono válido alcanza con tener al menos ingresado el teléfono
+
+         Ejemplos con respuestas del programa:
+
+            ```
+            -54 -341 -3657485 -> +543413657485
+            - -346 -6475961   -> +543466475961
+            - - -6745128      -> +543416745128
+            - - -547689       -> número muy corto
+            - - -             -> no tiene número
+            ```
+
       - **Maestro_limpio**: excel que va a tener los datos del maestro limpios para su guardado. Si quiere ver cómo es su versión final puede abrirlo luego de ejecutar el ejecutable
 
 4. **Ejecutar archivo final**
