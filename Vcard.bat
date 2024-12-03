@@ -65,19 +65,3 @@ echo Proceso completado. El proyecto ha sido ejecutado correctamente.
 pause
 
 endlocal
-
-
-echo Ejecutando el script...
-python Vcard-contact.py
-
-REM Agregar una pausa para evitar que la ventana se cierre inmediatamente
-echo El script ha finalizado. Presione cualquier tecla para cerrar...
-pause
-
-echo Desactivando entorno virtual...
-deactivate
-
-echo Proceso completado. El proyecto ha sido ejecutado correctamente.
-pause
-
-endlocal
