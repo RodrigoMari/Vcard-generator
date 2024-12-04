@@ -4,12 +4,7 @@ Este proyecto genera archivos de contactos en formato vCard a partir de datos de
 
 ## Requisitos
 
-Antes de ejecutar el proyecto, necesitarás tener instalado lo siguiente:
-
-**Deberá bajar en la pagina hasta casi el final y apretar [DESCARGAR] a la derecha de donde dice [Build Tools para Visual Studio 2022]**
-- [Instalador visual studio build tools](https://visualstudio.microsoft.com/es/downloads/?q=build+tools)
-
-No se incluyó en el archivo ejecutable debido a que requiere permisos de administrador
+Es necesario que tenga alguna versión de excel para poder editar el maestro de contactos
 
 ## Uso
 
@@ -54,6 +49,8 @@ No se incluyó en el archivo ejecutable debido a que requiere permisos de admini
 4. **Ejecutar archivo final**
    
    Dentro del directorio principal encontrará el archivo ejecutable llamado "Vcard.bat" al que deberá darle doble click. Este archivo reproduce varios pasos en consola, entre ellos descargar python, pip y las dependencias necesarias, por lo que deberá ser paciente. No debe temer de dichas descargas ya que, ademas de ser aplicaciones de Microsoft, se ejecutan en un entorno virtual ajeno a su computadora (cuando termine sera borrado todo lo instalado)
+
+   La instalacion tarda un par de minutos la primera vez, luego se ejecuta en pocos segundos
 
    [URGENTE] **Hay un error de descarga con python en el que luego de su descarga se cierra la consola, simplemente debe darle nuevamente doble click al ejecutable**
 

@@ -4,7 +4,7 @@ setlocal
 REM Verificar si Python está instalado
 python --version >nul 2>nul
 if %errorlevel% neq 0 (
-    echo Python no encontrado en el sistema, descargando e instalando Python...
+    echo Python no encontrado en el sistema, descargando e instalando Python. Puede tardar unos minutos...
 
     REM Descargar Python (en este caso, la versión 3.11.0)
     powershell -Command "Invoke-WebRequest -Uri https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe -OutFile python_installer.exe"
@@ -16,11 +16,14 @@ if %errorlevel% neq 0 (
 
         REM Eliminar el instalador descargado
         del python_installer.exe
+
     ) else (
         echo Error: No se pudo descargar el instalador de Python.
         exit /b 1
     )
 )
+
+
 
 REM Verificar si pip está instalado
 python -m ensurepip --upgrade
