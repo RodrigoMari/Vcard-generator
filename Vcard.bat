@@ -7,7 +7,7 @@ if %errorlevel% neq 0 (
     echo Python no encontrado en el sistema, descargando e instalando Python...
 
     REM Descargar Python (en este caso, la versión 3.11.0)
-    powershell -Command "Invoke-WebRequest -Uri https://www.python.org/ftp/python/3.11.0/python-3.11.0.exe -OutFile python_installer.exe"
+    powershell -Command "Invoke-WebRequest -Uri https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe -OutFile python_installer.exe"
 
     REM Verificar si el archivo se descargó correctamente
     if exist python_installer.exe (
@@ -44,14 +44,11 @@ python -m pip install --upgrade pip
 
 REM Instalar dependencias
 echo Instalando dependencias...
-pip install setuptools wheel
-pip install meson
-pip install cmake
 pip install -r requirements.txt
 
 REM Ejecutar el script
 echo Ejecutando el script...
-python Vcard-contact.py
+python Vcard_contact.py
 
 REM Agregar una pausa para evitar que la ventana se cierre inmediatamente
 echo El script ha finalizado. Presione cualquier tecla para cerrar...
